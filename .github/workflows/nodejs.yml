@@ -1,0 +1,9 @@
+name: CI process
+
+on: push
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: gendiff __fixtures__/file1.json __fixtures__/file2.json
