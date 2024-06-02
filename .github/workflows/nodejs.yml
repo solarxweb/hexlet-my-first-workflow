@@ -5,5 +5,5 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: make init
+      - run: make init
       - run: make say-hello
